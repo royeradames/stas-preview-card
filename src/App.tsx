@@ -30,13 +30,13 @@ function App() {
       </p>
       <ul className="stats__list-stats">
         <li className="stats__stat">
-          <span className="stats_stat--highlight">10k+</span> companies
+          <span className="stats__stat--highlight">10k+</span> companies
         </li>
         <li className="stats__stat">
-          <span className="stats_stat--highlight">314</span> templates
+          <span className="stats__stat--highlight">314</span> templates
         </li>
         <li className="stats__stat">
-          <span className="stats_stat--highlight">12m+</span> queries
+          <span className="stats__stat--highlight">12m+</span> queries
         </li>
       </ul>
     </main>
