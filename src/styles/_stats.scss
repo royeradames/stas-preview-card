@@ -10,10 +10,9 @@ $desktop: 1440px;
 }
 .stats{
     grid-area: 2;
-    color: var(--color-white-300);
+    color: var(--color-white-200);
     background-color: var(--color-blue-700);
-    font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: var(--font-size);
     border-radius: 1rem;
     text-align: center;
@@ -39,11 +38,26 @@ $desktop: 1440px;
     }
     &__title{
         grid-area: tittle;
+        font-size: 2em;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: var(--color-white-300);
+
+        &--highlight{
+            color: var(--color-violet);
+        }
     }
     &__message{
         grid-area: message;
     }
     &__list-stats{
         grid-area: list;
+    }
+    &__stat{
+        color: var(--color-white-100);
+        
+        &--highlight{
+            color: var(--color-white-300);
+        }
     }
 }
