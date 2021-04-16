@@ -1,5 +1,7 @@
 $desktop: 1440px;
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 .stats{
-    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;;
+    font-size: var(--font-size);
 }

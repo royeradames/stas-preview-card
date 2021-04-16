@@ -1,3 +1,19 @@
 #root{
-    
+    // (main background)
+   --color-blue-900: hsl(233, 47%, 7%);
+    //(card background)
+    --color-blue-700: hsl(244, 38%, 16%);
+    // (accent)
+    --color-violet : hsl(277, 64%, 61%);
+
+    // ### Neutral
+    // (main heading, stats)
+    --color-white-300: hsl(0, 0%, 100%);
+    // (main paragraph)
+    --color-white-200: hsla(0, 0%, 100%, 0.75);
+    // (stat headings)
+    --color-white-100: hsla(0, 0%, 100%, 0.6);
+
+    // font size
+    --font-size: 1.5rem;
 }
