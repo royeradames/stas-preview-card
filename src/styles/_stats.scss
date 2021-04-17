@@ -38,7 +38,6 @@ $desktop: 1440px;
         // header image a filter color of violet
         content: "";
         grid-area: header;
-        z-index: 1;
         background-color: var(--color-violet);
         opacity: .5;
     }
