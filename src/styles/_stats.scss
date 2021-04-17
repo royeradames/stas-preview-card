@@ -7,6 +7,16 @@ $desktop: 1440px;
     justify-items: center;
     background-color: var(--color-blue-900);
     min-height: 100vh;
+
+    @media(min-width: $desktop){
+        // min-height: initial;
+        grid-template: initial;
+        // grid-template-columns: min-content;
+        // grid-template-rows: min-content;
+        // justify-content: center;
+        // align-content: center;
+        // align-items: center;
+    }
 }
 .stats{
     grid-area: 2;
@@ -31,7 +41,24 @@ $desktop: 1440px;
         ". list ."
         ". . ."
     ;
-    max-width: 88%;
+    // max-width: 88%;
+    max-width: min(88%, 53.7rem);
+
+    @media(min-width: $desktop){
+        max-width: $desktop;
+        grid-template:  6rem min-content 2rem min-content 4rem min-content 5rem / 5rem 1fr 10rem max-content;
+        grid-template-areas: 
+            ". . . header"
+            ". tittle . header"
+            ". . . header"
+            ". message . header"
+            ". . . header"
+            ". list . header"
+            ". . . header"
+        ;
+        text-align: left;
+        height: max-content;
+    }
 
     &::before{
         // adds a div that gives
@@ -62,6 +89,11 @@ $desktop: 1440px;
     }
     &__list-stats{
         grid-area: list;
+
+        @media(min-width: $desktop){
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__stat{
         text-transform: uppercase;
