@@ -37,7 +37,7 @@ function App() {
           <p className="stats__stat--highlight">314</p>
           <h2 className="stats__stat-heading">templates</h2>
         </li>
-        <li className="stats__stat">
+        <li className="stats__stat stats__queries">
           <p className="stats__stat--highlight">12m+</p>
           <h2 className="stats__stat-heading">queries</h2>
         </li>
