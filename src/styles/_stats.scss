@@ -39,14 +39,7 @@ $desktop: 1200px;
     max-width: min(88%, 53.7rem);
 
     @media(min-width: $desktop){
-        // grid-template-columns: 2fr 2fr;
-        // grid-template-rows: 1fr 1fr 1fr;
-        // grid-template-areas: 
-        //     "tittle header"
-        //     "message header"
-        //     "list header"
-        // ;
-        grid-template:  8rem min-content 2rem min-content 4rem min-content 5rem / 7rem 1fr 10rem 2fr;
+        grid-template:  8rem min-content 2rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem 2fr;
         grid-template-areas: 
             ". . . header"
             ". tittle . header"
@@ -57,7 +50,7 @@ $desktop: 1200px;
             ". . . header"
         ;
         text-align: left;
-        height: 43.8rem;
+        height: min-content;
         // height: (max-content);
         // max-height: 43.8rem;
         max-width: min(80%, 110rem);
