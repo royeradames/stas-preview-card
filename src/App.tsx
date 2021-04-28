@@ -3,8 +3,8 @@ import "./styles/main.scss";
 
 function App() {
   return (
-    <main className="main stats">
-      <article>
+    <main className="main ">
+      <article className="stats">
         <header className="stats__header"></header>
         <div className="stats__content">
           <h2 className="stats__title">
