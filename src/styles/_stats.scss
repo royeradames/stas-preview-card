@@ -18,6 +18,7 @@ $desktop: 426px;
     display: grid;
     grid-template:
         "header" auto
+        // "header" auto
         "content" minmax(29.3rem, auto)
         / min(88%, 53.7rem)
     ;
@@ -34,21 +35,34 @@ $desktop: 426px;
     }
 
     &__header{
-        // layout
+        /* layout */
         grid-area: header;
+        display: grid;
+        grid-template:
+            "img-filter" 1fr
+            / 1fr
+            ;
         // apply the border radious to all the children
         border-radius: 1rem 1rem 0 0 ;
         overflow: hidden;
         //  makes sure the image is fully visable
         background-size: contain;
+        &-filter{
 
+            background-color: var(--color-violet);
+            opacity: .5;
+            height: 100%;        
+            width: 100%;
+
+            /* layout */
+            grid-area: img-filter;
+        }
+        &-img{
+            grid-area: img-filter;
+            // height: 100%;
+        }
     }
-    &__filter{
-        background-color: var(--color-violet);
-        opacity: .5;
-        height: 100%;        
-        width: 100%;
-    }
+    
     &__content{
         background-color: var(--color-blue-700);
         padding: 4rem 1rem 4rem 2rem;
