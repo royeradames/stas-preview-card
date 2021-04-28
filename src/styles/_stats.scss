@@ -39,7 +39,10 @@ $desktop: 1200px;
     max-width: min(88%, 53.7rem);
 
     @media(min-width: $desktop){
-        grid-template:  8rem min-content 2rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem 2fr;
+        // todo: how do I make a row size depend on a min content of a cell instead of the largerst cell?
+        // I want the text to dictiate the img size
+        grid-template:  8rem min-content 02rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem auto;
+        // grid-template:  8rem min-content 2rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem 2fr;
         grid-template-areas: 
             ". . . header"
             ". tittle . header"
@@ -51,8 +54,6 @@ $desktop: 1200px;
         ;
         text-align: left;
         height: min-content;
-        // height: (max-content);
-        // max-height: 43.8rem;
         max-width: min(80%, 110rem);
     }
 
@@ -118,7 +119,5 @@ $desktop: 1200px;
     }
 }
 .picture{
-    @media(min-width: $desktop){
-            height: 43.8rem;
-        }
+    height: 30rem;
 }

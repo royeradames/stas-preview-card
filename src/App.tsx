@@ -8,9 +8,9 @@ import desktopHeader from "./images/image-header-mobile.jpg";
 function App() {
   return (
     <main className="main stats">
-      <picture className="stats__img">
+      <picture className="stats__img picture">
         <source
-          media="(min-width:1440px)"
+          media="(min-width:1200px)"
           srcSet={desktopHeader}
           className="stats__img"
         />
