@@ -16,12 +16,9 @@ $desktop: 1200px;
     display: grid;
     grid-template:
         "header" auto
-        // "header" minmax(auto, .8fr)
         "content" minmax(29.3rem, auto)
         / min(88%, 53.7rem)
     ;
-    // max-width: 88%;
-    // max-width: min(88%, 53.7rem);
     justify-content: center;
     align-content: center;
 

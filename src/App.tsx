@@ -1,12 +1,14 @@
 import React from "react";
 import "./styles/main.scss";
 
+import mobileImg from "./images/image-header-mobile.jpg";
 function App() {
   return (
     <main className="main ">
       <article className="stats">
         <header className="stats__header">
           <div className="stats__filter"></div>
+          <img src={mobileImg} alt="" />
         </header>
         <div className="stats__content">
           <h2 className="stats__title">
