@@ -1,10 +1,12 @@
-$desktop: 1200px;
+$desktop: 426px;
+// $desktop: 1200px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 //? is there a way to map the rounded couners all into 1 selector?
 // 425 px looks best for the mobile design
 .stats{
     min-height: 100vh;
+    min-width: 100vw;
     color: var(--color-white-200);
     font-family: 'Lexend Deca', sans-serif;
     font-size: var(--font-size);
@@ -23,28 +25,15 @@ $desktop: 1200px;
     align-content: center;
 
     @media(min-width: $desktop){
-        // todo: how do I make a row size depend on a min content of a cell instead of the largerst cell?
-        // I want the text to dictiate the img size
-        // grid-template:  8rem min-content 02rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem auto;
-        // grid-template-areas: 
-        //     ". . . header"
-        //     ". tittle . header"
-        //     ". . . header"
-        //     ". message . header"
-        //     ". . . header"
-        //     ". list . header"
-        //     ". . . header"
-        // ;
+        grid-template:
+        "content header " min-content
+        / 1fr 1fr
+        ;
         text-align: left;
-        // height: min-content;
         max-width: min(80%, 110rem);
     }
 
     &__header{
-        
-        background-image: url("../images/image-header-mobile.jpg");
-        background-repeat: no-repeat;
-        
         // layout
         grid-area: header;
         // apply the border radious to all the children
