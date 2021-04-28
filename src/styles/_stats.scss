@@ -1,36 +1,29 @@
 $desktop: 1200px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-#root{
-//     display: grid;
-//     grid-template: 8rem 1fr 8rem/ 1fr;
-//     justify-items: center;
-//     background-color: var(--color-blue-900);
-    min-height: 100vh;
-
-//     @media(min-width: $desktop){
-//         grid-template: initial;
-//     }
-}
+//? is there a way to map the rounded couners all into 1 selector?
+// 425 px looks best for the mobile design
 .stats{
-    // grid-area: 2;
+    min-height: 100vh;
     color: var(--color-white-200);
-    background-color: var(--color-blue-700);
     font-family: 'Lexend Deca', sans-serif;
     font-size: var(--font-size);
-    border-radius: 1rem;
+    background-color: var(--color-blue-900);
     text-align: center;
-    overflow: hidden;
+    
 
-    // layout
+    /* layout */
     display: grid;
     grid-template:
-        "header" .8fr
-        "content" 1fr
-        / 1fr
+        "header" auto
+        // "header" minmax(auto, .8fr)
+        "content" minmax(29.3rem, auto)
+        / min(88%, 53.7rem)
     ;
     // max-width: 88%;
-    max-width: min(88%, 53.7rem);
+    // max-width: min(88%, 53.7rem);
+    justify-content: center;
+    align-content: center;
 
     @media(min-width: $desktop){
         // todo: how do I make a row size depend on a min content of a cell instead of the largerst cell?
@@ -52,10 +45,17 @@ $desktop: 1200px;
 
     &__header{
         
-        grid-area: header;
         background-image: url("../images/image-header-mobile.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        
+        // layout
+        grid-area: header;
+        // apply the border radious to all the children
+        border-radius: 1rem 1rem 0 0 ;
+        overflow: hidden;
+        //  makes sure the image is fully visable
+        background-size: contain;
+
     }
     &__filter{
         background-color: var(--color-violet);
@@ -63,8 +63,15 @@ $desktop: 1200px;
         height: 100%;        
         width: 100%;
     }
+    &__content{
+        background-color: var(--color-blue-700);
+        padding: 4rem 1rem 4rem 2rem;
+        
+        // bottom size round conners
+        border-radius: 0 0 1rem 1rem;
+    }
     &__title{
-        grid-area: tittle;
+        margin-bottom: 2rem;
         font-size: 2em;
         font-family: 'Inter', sans-serif;
         font-weight: 700;
@@ -75,12 +82,11 @@ $desktop: 1200px;
         }
     }
     &__message{
-        grid-area: message;
         line-height: 1.3;
+        margin-bottom: 2rem;
     }
     &__list-stats{
-        grid-area: list;
-
+        
         @media(min-width: $desktop){
             display: flex;
             justify-content: space-between;
