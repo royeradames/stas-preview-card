@@ -2,18 +2,18 @@ $desktop: 1200px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 #root{
-    display: grid;
-    grid-template: 8rem 1fr 8rem/ 1fr;
-    justify-items: center;
-    background-color: var(--color-blue-900);
+//     display: grid;
+//     grid-template: 8rem 1fr 8rem/ 1fr;
+//     justify-items: center;
+//     background-color: var(--color-blue-900);
     min-height: 100vh;
 
-    @media(min-width: $desktop){
-        grid-template: initial;
-    }
+//     @media(min-width: $desktop){
+//         grid-template: initial;
+//     }
 }
 .stats{
-    grid-area: 2;
+    // grid-area: 2;
     color: var(--color-white-200);
     background-color: var(--color-blue-700);
     font-family: 'Lexend Deca', sans-serif;
@@ -24,16 +24,10 @@ $desktop: 1200px;
 
     // layout
     display: grid;
-    grid-template: min-content 4rem min-content 2rem min-content 4rem min-content 3rem / 2rem 1fr 2rem;
-    grid-template-areas: 
-        "header header header"
-        ". . ."
-        ". tittle ."
-        ". . ."
-        ". message ."
-        ". . ."
-        ". list ."
-        ". . ."
+    grid-template:
+        "header" .8fr
+        "content" 1fr
+        / 1fr
     ;
     // max-width: 88%;
     max-width: min(88%, 53.7rem);
@@ -41,33 +35,33 @@ $desktop: 1200px;
     @media(min-width: $desktop){
         // todo: how do I make a row size depend on a min content of a cell instead of the largerst cell?
         // I want the text to dictiate the img size
-        grid-template:  8rem min-content 02rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem auto;
-        // grid-template:  8rem min-content 2rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem 2fr;
-        grid-template-areas: 
-            ". . . header"
-            ". tittle . header"
-            ". . . header"
-            ". message . header"
-            ". . . header"
-            ". list . header"
-            ". . . header"
-        ;
+        // grid-template:  8rem min-content 02rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem auto;
+        // grid-template-areas: 
+        //     ". . . header"
+        //     ". tittle . header"
+        //     ". . . header"
+        //     ". message . header"
+        //     ". . . header"
+        //     ". list . header"
+        //     ". . . header"
+        // ;
         text-align: left;
-        height: min-content;
+        // height: min-content;
         max-width: min(80%, 110rem);
     }
 
-    &::before{
-        // adds a div that gives
-        // header image a filter color of violet
-        content: "";
+    &__header{
+        
         grid-area: header;
-        background-color: var(--color-violet);
-        opacity: .5;
+        background-image: url("../images/image-header-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     &__img{
-        grid-area: header;
-        
+        background-color: var(--color-violet);
+        opacity: .5;
+        height: 100%;        
+        width: 100%;
     }
     &__title{
         grid-area: tittle;
