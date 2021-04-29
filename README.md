@@ -13,6 +13,9 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+      - [CSS grid](#css-grid)
+      - [Significant advantages for this project:](#significant-advantages-for-this-project)
+      - [emmet](#emmet)
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
@@ -51,6 +54,84 @@ Users should be able to:
 ### What I learned
 
 This section to recap over some of my major learnings while working through this project.
+
+#### CSS grid
+This project was the catelist for me spend a significant amount of time relearning CSS grid in a more indepedt level. With the new knowled I was able to simplify my previous code and make the website look more like the design file.
+
+Grid garden was the way I got introduce to learning CSS grid by playing a game with a story line. Grid critters was one of the best resource I found that had the tutorial on how to use it, and challanges and practice that made me feel confident using CSS grid. 
+
+#### Significant advantages for this project: 
+
+- using grid-template instead of grid-template-rows, grid-template-columns, and grid-template-areas.
+
+- Having a deeper undertanding on how grid works, what is capable of, and it's limitation.
+  Inspire me to change the layout from:
+  - define white space vs justify, and align content 
+  -  having a complex layout vs having multi simple layout
+  -  fr units only vs using multi units when it makes sense for the layout
+     -  min()
+     -  minmax()
+     -  min-content
+     -  auto
+     -  fr
+
+Mobile Complex
+```css
+.stats {
+   // layout
+    display: grid;
+    grid-template: min-content 4rem min-content 2rem min-content 4rem min-content 3rem / 2rem 1fr 2rem;
+    grid-template-areas: 
+        "header header header"
+        ". . ."
+        ". tittle ."
+        ". . ."
+        ". message ."
+        ". . ."
+        ". list ."
+        ". . ."
+    ;
+}
+```
+
+Mobile simplify
+```css
+.stats {
+   display: grid;
+    grid-template:
+        "header" auto
+        // "header" auto
+        "content" minmax(29.3rem, auto)
+        / min(88%, 53.7rem)
+    ;
+    justify-content: center;
+    align-content: center;
+}
+```
+Desktop Complex
+```css
+.stats {
+   grid-template:
+        "content header " min-content
+        /
+        min(45vw, 61rem) 
+        min(45vw, 61rem) 
+        ;
+}
+```
+
+Desktop simplify
+```css
+.stats {
+   grid-template:
+        "content header " min-content
+        /
+        min(45vw, 61rem) 
+        min(45vw, 61rem) 
+        ;
+}
+```
+#### emmet
 
 To see how you can add code snippets, see below:
 
