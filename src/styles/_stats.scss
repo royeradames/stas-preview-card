@@ -1,4 +1,5 @@
-$desktop: 778px;
+$desktop: 1240px;
+// $desktop: 778px;
 // $desktop: 426px;
 // $desktop: 1200px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
@@ -32,9 +33,6 @@ $desktop: 778px;
 
     @media(min-width: $desktop){
         grid-template:
-        // "content header " minmax(30rem, min-content )
-        // "content header " minmax(auto, 30rem)
-        // "content header " minmax( 30rem, 1fr)
         // "content header " minmax(24.5rem, 35rem)
         "content header " min-content
         // "content header " minmax(auto, min-content)
@@ -94,6 +92,7 @@ $desktop: 778px;
 
         @media(min-width: $desktop){
             border-radius: 1rem 0 0 1rem;
+            padding: 8rem 16rem 4rem 8rem;
         }
     }
     &__title{
@@ -102,6 +101,10 @@ $desktop: 778px;
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         color: var(--color-white-300);
+        
+        @media(min-width: $desktop){
+            margin-bottom: 4rem;
+        }
 
         &--highlight{
             color: var(--color-violet);
@@ -110,6 +113,9 @@ $desktop: 778px;
     &__message{
         line-height: 1.3;
         margin-bottom: 2rem;
+        @media(min-width: $desktop){
+            margin-bottom: 8rem;
+        }
     }
     &__list-stats{
         
