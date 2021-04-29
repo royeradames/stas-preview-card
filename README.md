@@ -33,8 +33,7 @@ Users should be able to:
 ![Mobile screenshot](./src/images/mobile-screenshoot.PNG)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [royeradames-stas-preview-card.vercel.app](royeradames-stas-preview-card.vercel.app)
 
 ## My process
 
