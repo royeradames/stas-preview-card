@@ -33,16 +33,7 @@ $desktop: 1240px;
 
     @media(min-width: $desktop){
         grid-template:
-        // "content header " minmax(24.5rem, 35rem)
         "content header " min-content
-        // "content header " minmax(auto, min-content)
-        // "content header " min(35vh, 50%)
-        // "content header " minmax(24rem, auto)
-        // "content header "  24rem
-        // "content header " minmax(auto, 24rem)
-        // "content header " auto
-        // "content header " 30rem
-        // "content header " min-content
         /
         min(45vw, 61rem) 
         min(45vw, 61rem) 
@@ -146,10 +137,4 @@ $desktop: 1240px;
             font-size: 1.9em;
         }
     }
-    &__queries{
-        margin: 0;
-    }
-}
-.picture{
-    height: 30rem;
 }
