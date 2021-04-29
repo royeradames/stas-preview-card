@@ -56,9 +56,9 @@ Users should be able to:
 This section to recap over some of my major learnings while working through this project.
 
 #### CSS grid
-This project was the catelist for me spend a significant amount of time relearning CSS grid in a more indepedt level. With the new knowled I was able to simplify my previous code and make the website look more like the design file.
+This project was the catalyst for me to spend a significant amount of time relearning the CSS grid at a more independent level. With the new knowledge, I was able to simplify my previous code and make the website look more like the design file.
 
-Grid garden was the way I got introduce to learning CSS grid by playing a game with a story line. Grid critters was one of the best resource I found that had the tutorial on how to use it, and challanges and practice that made me feel confident using CSS grid. 
+Grid garden was the way I got introduce to learning CSS grid by playing a game with a storyline. Grid critters were one of the best resources I found that had the tutorial on how to use it, and challenges and practice that made me feel confident using CSS grid.  
 
 #### Significant advantages for this project: 
 
@@ -141,26 +141,7 @@ Desktop simplify
 }
 ```
 #### emmet
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I had such a great time with CSS gritters and I when ahead and play a emmet game. I already knew the basic starting this project, and that is how I wrote the html code but after finishing Sourcery (emmet game) I feel more confident with how to use and when to use emmet. Now I am more encline to use emmet to write a tag.
 
 ### Continued development
 
