@@ -80,10 +80,11 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Grid Critters](https://mastery.games/gridcritters/) - A indebt way to learn CSS grid by playing a game. Very fun, the story is engaging, and I learn a lot.
+- [Grid Garden](https://cssgridgarden.com/) - A great introduction of what CSS grid is capable of doing.
+-  [Sourcery](https://codepip.com/games/sourcery/) - A quick and fun way to learn emmet by playing a short game. The tutorial works great and the challenges made me confident with emmet.
+-  [A Complete Guide to Grid ](https://css-tricks.com/snippets/css/complete-guide-grid/) - A quick reference for when I need to look at a CSS grid property.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
