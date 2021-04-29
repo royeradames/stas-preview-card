@@ -64,11 +64,11 @@ Grid garden was the way I got introduce to learning CSS grid by playing a game w
 
 - using grid-template instead of grid-template-rows, grid-template-columns, and grid-template-areas.
 
-- Having a deeper undertanding on how grid works, what is capable of, and it's limitation.
+- Having a deeper understanding on how the grid works, what is capable of, and its limitation.
   Inspire me to change the layout from:
   - define white space vs justify, and align content 
-  -  having a complex layout vs having multi simple layout
-  -  fr units only vs using multi units when it makes sense for the layout
+  -  having a complex layout vs having a multi simple layout
+  -  fr units only vs using multi-units when it makes sense for the layout
      -  min()
      -  minmax()
      -  min-content
