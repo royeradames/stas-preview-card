@@ -2,6 +2,8 @@ $desktop: 778px;
 // $desktop: 426px;
 // $desktop: 1200px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+// ? how to make it growth auto until it reaches a specific row size?
+/* min() % or vw and your max rem unit */
 
 //? is there a way to map the rounded couners all into 1 selector?
 // 425 px looks best for the mobile design
@@ -29,7 +31,6 @@ $desktop: 778px;
     align-content: center;
 
     @media(min-width: $desktop){
-        // ? how to make it growth auto until it reaches a specific row size?
         grid-template:
         // "content header " minmax(30rem, min-content )
         // "content header " minmax(auto, 30rem)
@@ -47,11 +48,9 @@ $desktop: 778px;
         /
         min(45vw, 61rem) 
         min(45vw, 61rem) 
-        // min(45vw, 51rem) 
         
         ;
         text-align: left;
-        // max-width: min(80%, 110rem);
     }
 
     &__header{
@@ -64,13 +63,15 @@ $desktop: 778px;
             ;
         // apply the border radious to all the children
         border-radius: 1rem 1rem 0 0 ;
+        @media(min-width: $desktop){
+            border-radius: 0 1rem 1rem 0 ;
+        }
         overflow: hidden;
         //  makes sure the image is fully visable
         background-size: contain;
         &-filter{
 
             background-color: var(--color-violet);
-            opacity: .5;
             height: 100%;        
             width: 100%;
 
@@ -79,7 +80,8 @@ $desktop: 778px;
         }
         &-img{
             grid-area: img-filter;
-            // height: 100%;
+            opacity: .5;
+
         }
     }
     
@@ -89,6 +91,10 @@ $desktop: 778px;
         
         // bottom size round conners
         border-radius: 0 0 1rem 1rem;
+
+        @media(min-width: $desktop){
+            border-radius: 1rem 0 0 1rem;
+        }
     }
     &__title{
         margin-bottom: 2rem;
