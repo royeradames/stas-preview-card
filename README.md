@@ -111,12 +111,21 @@ Mobile simplify
 Desktop Complex
 ```css
 .stats {
-   grid-template:
-        "content header " min-content
-        /
-        min(45vw, 61rem) 
-        min(45vw, 61rem) 
+   grid-template:  8rem min-content 2rem min-content 4rem min-content clamp(1rem, 2vw, 5rem) / 7rem 1fr 10rem 2fr;
+        grid-template-areas: 
+            ". . . header"
+            ". tittle . header"
+            ". . . header"
+            ". message . header"
+            ". . . header"
+            ". list . header"
+            ". . . header"
         ;
+        text-align: left;
+        height: min-content;
+        // height: (max-content);
+        // max-height: 43.8rem;
+        max-width: min(80%, 110rem);;
 }
 ```
 
@@ -128,7 +137,7 @@ Desktop simplify
         /
         min(45vw, 61rem) 
         min(45vw, 61rem) 
-        ;
+    ;
 }
 ```
 #### emmet
