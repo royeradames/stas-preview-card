@@ -1,9 +1,12 @@
-$desktop: 426px;
+$desktop: 778px;
+// $desktop: 426px;
 // $desktop: 1200px;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 //? is there a way to map the rounded couners all into 1 selector?
 // 425 px looks best for the mobile design
+// desktop img is fully visable at 723px
+// desktop looks great at 778px
 .stats{
     min-height: 100vh;
     min-width: 100vw;
@@ -26,12 +29,29 @@ $desktop: 426px;
     align-content: center;
 
     @media(min-width: $desktop){
+        // ? how to make it growth auto until it reaches a specific row size?
         grid-template:
+        // "content header " minmax(30rem, min-content )
+        // "content header " minmax(auto, 30rem)
+        // "content header " minmax( 30rem, 1fr)
+        // "content header " minmax(24.5rem, 35rem)
         "content header " min-content
-        / 1fr 1fr
+        // "content header " minmax(auto, min-content)
+        // "content header " min(35vh, 50%)
+        // "content header " minmax(24rem, auto)
+        // "content header "  24rem
+        // "content header " minmax(auto, 24rem)
+        // "content header " auto
+        // "content header " 30rem
+        // "content header " min-content
+        /
+        min(45vw, 61rem) 
+        min(45vw, 61rem) 
+        // min(45vw, 51rem) 
+        
         ;
         text-align: left;
-        max-width: min(80%, 110rem);
+        // max-width: min(80%, 110rem);
     }
 
     &__header{
