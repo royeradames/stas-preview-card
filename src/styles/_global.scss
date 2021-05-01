@@ -13,5 +13,10 @@ html{
 }
 
 img{
+    // so the images don't become to big for our pages
     max-width: 100%;
+
+    // make the images fill it's container
+    height: 100%;
+    width: 100%;
 }
