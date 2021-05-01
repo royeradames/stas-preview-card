@@ -2,12 +2,16 @@ import React from "react";
 import "./styles/main.scss";
 
 import mobileImg from "./images/image-header-mobile.jpg";
+import desktoImg from "./images/image-header-desktop.jpg";
 function App() {
   return (
     <main className="main ">
       <article className="stats">
         <header className="stats__header">
-          <img src={mobileImg} alt="" className="stats__header-img" />
+          <picture className="stats__header-img">
+            <source media="(min-width: 1240px)" srcSet={desktoImg} />
+            <img src={mobileImg} alt="Three girls in a open office" />
+          </picture>
           <div className="stats__header-filter"></div>
         </header>
         <div className="stats__content">
