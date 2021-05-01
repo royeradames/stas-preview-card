@@ -10,7 +10,7 @@ function App() {
           <img src={mobileImg} alt="" className="stats__header-img" />
           <div className="stats__header-filter"></div>
         </header>
-        <div className="stats__content"/>
+        <div className="stats__content">
           <h2 className="stats__title">
             Get <span className="stats__title--highlight">insights</span> that
             help your business grow.
