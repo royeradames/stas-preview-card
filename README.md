@@ -140,6 +140,9 @@ Desktop simplify
     ;
 }
 ```
+
+
+
 #### emmet
 I had such a great time with CSS gritters and I when ahead and play a emmet game. I already knew the basic starting this project, and that is how I wrote the html code but after finishing Sourcery (emmet game) I feel more confident with how to use and when to use emmet. Now I am more encline to use emmet to write a tag.
 
