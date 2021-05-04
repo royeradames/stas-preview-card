@@ -16,6 +16,7 @@ $desktop: 1240px;
     display: grid;
     justify-content: center;
     align-content: center;
+    justify-items: center;
     
     &__container{
         min-width: 32.7rem;
@@ -30,6 +31,9 @@ $desktop: 1240px;
             "content" minmax(29.3rem, auto)
             / min(88%, 53.7rem)
         ;
+
+        justify-content: center;
+        align-content: center;
 
         @media(min-width: $desktop){
             grid-template:
