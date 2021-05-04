@@ -20,13 +20,11 @@ $desktop: 1240px;
     &__container{
         min-width: 32.7rem;
         max-width: 110rem;
-        // max-height: 44.7rem;
 
         /* layout */
         display: grid;
         grid-template:
             "header" auto
-            // "header" auto
             "content" minmax(29.3rem, auto)
             / min(88%, 53.7rem)
         ;
@@ -66,10 +64,11 @@ $desktop: 1240px;
 
             /* layout */
             grid-area: img-filter;
+            opacity: .6;
         }
         &-img{
             grid-area: img-filter;
-            opacity: .5;
+            // opacity: .5;
 
         }
     }
@@ -136,7 +135,7 @@ $desktop: 1240px;
             margin-bottom: 1rem;
             font-family: 'Inter', sans-serif;
             font-weight: 700;
-            font-size: 1.9em;
+            font-size: 2.4rem;
         }
     }
 }
