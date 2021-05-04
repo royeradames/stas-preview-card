@@ -41,13 +41,12 @@ $desktop: 1240px;
             text-align: left;
         }
     }
-    &__header{
+    &__header-img{
         /* layout */
         grid-area: header;
+
         background-color: var(--color-violet);
         height: 44.5rem;        
-        width: 100%;
-        // width: 54rem;
         background-size: cover;
         background-position: center;
         background-blend-mode: multiply;
