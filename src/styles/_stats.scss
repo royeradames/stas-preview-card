@@ -1,15 +1,7 @@
 $desktop: 1240px;
-// $desktop: 778px;
-// $desktop: 426px;
-// $desktop: 1200px;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
-// ? how to make it growth auto until it reaches a specific row size?
-/* min() % or vw and your max rem unit */
 
-//? is there a way to map the rounded couners all into 1 selector?
-// 425 px looks best for the mobile design
-// desktop img is fully visable at 723px
-// desktop looks great at 778px
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 .stats{
     min-height: 100vh;
     min-width: 100vw;
