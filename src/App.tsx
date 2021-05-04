@@ -9,10 +9,6 @@ function App() {
       <article className="stats">
         <div className="stats__container">
           <header className="stats__header">
-            <picture className="stats__header-img">
-              <source media="(min-width: 1240px)" srcSet={desktoImg} />
-              <img src={mobileImg} alt="Three girls in a open office" />
-            </picture>
             <div className="stats__header-filter"></div>
           </header>
           <div className="stats__content">
