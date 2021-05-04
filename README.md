@@ -15,6 +15,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
     - [What I learned](#what-i-learned)
       - [CSS grid](#css-grid)
       - [Significant advantages for this project:](#significant-advantages-for-this-project)
+      - [Learn Background blend mode](#learn-background-blend-mode)
       - [emmet](#emmet)
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
@@ -141,8 +142,22 @@ Desktop simplify
 }
 ```
 
-
-
+#### Learn Background blend mode
+I learned about the background-blend-mode property. It was useful for the image.
+```scss
+&__header-img{
+  background-color: var(--color-violet);
+  height: 44.5rem;        
+  width: 54rem;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-image: url("../images/image-header-mobile.jpg");
+  @media(min-width: $desktop){
+      background-image: url("../images/image-header-desktop.jpg");
+  }
+}
+```
 #### emmet
 I had such a great time with CSS gritters and I when ahead and play a emmet game. I already knew the basic starting this project, and that is how I wrote the html code but after finishing Sourcery (emmet game) I feel more confident with how to use and when to use emmet. Now I am more encline to use emmet to write a tag.
 

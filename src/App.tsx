@@ -7,7 +7,7 @@ function App() {
       <article className="stats">
         <div className="stats__container">
           <header className="stats__header">
-            <div className="stats__header-filter"></div>
+            <div className="stats__header-img"></div>
           </header>
           <div className="stats__content">
             <h2 className="stats__title">
