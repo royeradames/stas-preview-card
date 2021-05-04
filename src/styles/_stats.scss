@@ -10,30 +10,38 @@ $desktop: 1240px;
     font-size: var(--font-size);
     background-color: var(--color-blue-900);
     text-align: center;
-    
 
-    /* layout */
+    // layout
+    // should have the stats article center and with a color background
     display: grid;
-    grid-template:
-        "header" auto
-        // "header" auto
-        "content" minmax(29.3rem, auto)
-        / min(88%, 53.7rem)
-    ;
     justify-content: center;
     align-content: center;
+    
+    &__container{
+        min-width: 32.7rem;
+        max-width: 110rem;
+        // max-height: 44.7rem;
 
-    @media(min-width: $desktop){
+        /* layout */
+        display: grid;
         grid-template:
-        "content header " min-content
-        /
-        min(45vw, 61rem) 
-        min(45vw, 61rem) 
-        
+            "header" auto
+            // "header" auto
+            "content" minmax(29.3rem, auto)
+            / min(88%, 53.7rem)
         ;
-        text-align: left;
-    }
+        
 
+        @media(min-width: $desktop){
+            grid-template:
+            "content header " 44.7rem
+            /
+            1fr
+            1fr
+            ;
+            text-align: left;
+        }
+    }
     &__header{
         /* layout */
         grid-area: header;
