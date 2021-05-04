@@ -6,9 +6,7 @@ function App() {
     <main className="main ">
       <article className="stats">
         <div className="stats__container">
-          <header className="stats__header">
-            <div className="stats__header-img"></div>
-          </header>
+          <header className="stats__header"></header>
           <div className="stats__content">
             <h2 className="stats__title">
               Get <span className="stats__title--highlight">insights</span> that
