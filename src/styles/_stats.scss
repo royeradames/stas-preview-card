@@ -59,18 +59,18 @@ $desktop: 1240px;
         &-filter{
 
             background-color: var(--color-violet);
-            height: 100%;        
-            width: 100%;
+            height: 44.5rem;        
+            width: 54rem;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+            background-image: url("../images/image-header-mobile.jpg");
+            @media(min-width: $desktop){
+                background-image: url("../images/image-header-desktop.jpg");
+            }
 
-            /* layout */
-            grid-area: img-filter;
-            opacity: .6;
         }
-        &-img{
-            grid-area: img-filter;
-            // opacity: .5;
-
-        }
+        
     }
     
     &__content{
