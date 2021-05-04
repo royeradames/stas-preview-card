@@ -1,8 +1,6 @@
 import React from "react";
 import "./styles/main.scss";
 
-import mobileImg from "./images/image-header-mobile.jpg";
-import desktoImg from "./images/image-header-desktop.jpg";
 function App() {
   return (
     <main className="main ">
