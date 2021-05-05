@@ -17,10 +17,10 @@ $desktop: 1240px;
     justify-content: center;
     align-content: center;
     justify-items: center;
+    grid-template: auto/minmax(32.7rem, 110rem);
     
     &__container{
-        min-width: 32.7rem;
-        max-width: 110rem;
+        // rounded corners
         border-radius: .8rem .8rem .8rem .8rem ;
         overflow: hidden;
 
@@ -30,7 +30,7 @@ $desktop: 1240px;
             "header" auto
             "content" minmax(29.3rem, auto)
             / 
-            minmax(32.7rem, 55%)
+            minmax(32.7rem, 55vw)
         ;
 
         justify-content: center;
@@ -53,7 +53,6 @@ $desktop: 1240px;
         background-color: var(--color-violet);
         height: 24rem;        
         background-size: cover;
-        // background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
         background-blend-mode: multiply;
