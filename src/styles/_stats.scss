@@ -29,7 +29,8 @@ $desktop: 1240px;
         grid-template:
             "header" auto
             "content" minmax(29.3rem, auto)
-            / min(88%, 53.7rem)
+            / 
+            minmax(32.7rem, 55%)
         ;
 
         justify-content: center;
@@ -50,12 +51,16 @@ $desktop: 1240px;
         grid-area: header;
 
         background-color: var(--color-violet);
-        height: 44.5rem;        
+        height: 24rem;        
         background-size: cover;
-        background-position: center;
+        // background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
         background-blend-mode: multiply;
         background-image: url("../images/image-header-mobile.jpg");
         @media(min-width: $desktop){
+            height: 44.6rem;
+            background-size: cover;
             background-image: url("../images/image-header-desktop.jpg");
         }
     }
